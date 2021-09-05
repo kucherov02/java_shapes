@@ -189,7 +189,7 @@ public class Main {
                     System.out.println("Добавлена фигура "+ rand_arr[rand].getName()+" c объемом "+ rand_arr[rand].getSize());
                 }
                 case 8->{
-                    System.out.println("Информация по резервуару\n"+ "Вместимость: "+tank.getVolume()+ "\nОсталось: "+ tank.getFree_volume());
+                    System.out.println("Информация по резервуару\n"+ "Вместимость: "+tank.getVolume()+"\nВода: "+tank.getWater()+ "\nОсталось: "+ tank.getFree_volume());
                     tank.printShapes();
                 }
                 case 9 ->{

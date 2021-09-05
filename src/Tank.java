@@ -17,8 +17,10 @@ public class Tank {
     }
 
     public void addShape(Shape shape){
+        System.out.println("Оставшийся объем до добавления: "+free_volume);
         arrayList.add(shape);
         free_volume -= shape.getSize();
+        System.out.println("Оставшийся объем после добавления: "+free_volume);
     }
 
     public boolean isFull(){
@@ -34,6 +36,10 @@ public class Tank {
 
     public double getFree_volume() {
         return free_volume;
+    }
+
+    public double getWater() {
+        return water;
     }
 
     public void printShapes(){
